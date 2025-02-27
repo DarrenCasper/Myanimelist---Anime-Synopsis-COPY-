@@ -1,0 +1,145 @@
+footer{
+    display: block;
+    background-color: #2e51a2;
+    clear: both;
+    margin-top: 30px;
+    width: 1903px;
+    height: 251.5px;
+    padding: 32px 0px 15px;
+}
+#icon-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#icon-footer .icon1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 256px;
+    height: 31px;
+    gap: 10px;
+}
+#icon-footer .icon2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 356px;
+    height: 32px;
+}
+#icon-footer .icon1 .box3{
+    font-size: 11px;
+    color: hsl(0, 0%, 75%);
+}
+#icon-footer .icon1 .box1 a{
+    color: hsl(0, 0%, 100%);
+}
+#icon-footer .icon2 .box4{
+    font-size: 11px;
+    color: hsl(0, 0%, 75%);
+}
+#icon-footer .icon2 img{
+    height: 30px;
+    width: 100px;
+}
+#icon-footer .icon1 .box1 a:hover{
+    color:hsl(0, 0%, 85%) ;
+    cursor: pointer;
+}
+#icon-footer .icon2 .box2 a:hover{
+    color:hsl(0, 0%, 85%) ;
+    cursor: pointer;
+}
+.line{
+    padding-bottom: 50px ;
+    border-bottom: 0.1px solid silver;
+    opacity: 0.5;
+    width: 550px;
+    margin: 0 auto;
+}
+.navigationbar-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 32px 0px 3px;
+}
+.navigationbar-bottom .others{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    gap: 14px;
+}
+.navigationbar-bottom .home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid white;
+}
+.navigationbar-bottom a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.navigationbar-bottom a:hover{
+    text-decoration: underline;
+}
+.navigationbar-bottom a:visited{
+    color: white;
+}
+.external-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.external-links .recomend{
+    font-size: 12px;
+    color: hsl(0, 0%, 70%) ;
+    padding-right: 20px;
+}
+.external-links .external-links-outside {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+}
+.external-links .external-links-outside a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 9px;
+    text-decoration: none;
+    color: hsl(0, 0%, 85%);
+}
+.external-links .external-links-outside img {
+   height: 20px;
+   float: left;
+}
+.external-links .external-links-outside a:hover{
+    text-decoration: underline;
+    color: hsl(0, 0%, 50%);
+}
+.external-links .external-links-outside a:visited{
+    color: hsl(0, 0%, 85%);
+}
+.ending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ending .ending1{
+    font-size: 11px;
+    color: hsl(0, 0%, 70%);
+    margin-bottom: 0px;
+}
+.ending .ending2{
+    font-size: 8px;
+    color: hsl(0, 0%, 70%);
+    margin-top: 0px;
+}

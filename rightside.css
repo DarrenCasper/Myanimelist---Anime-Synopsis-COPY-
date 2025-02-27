@@ -1,0 +1,615 @@
+.rightside{
+    border-left: 0.1px solid silver;
+    width: 100vh;
+}
+.anime-details{
+    display: flex;
+    justify-content: start;
+    gap: 2px;
+    padding: 0px 0px 2px;
+    border-bottom: 0.1px solid black;
+}
+.anime-details a{
+    padding: 2px 5px 2px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    display: inline-block;
+}
+.anime-details a.active{
+    color: white !important;
+    background: #1c439b;
+}
+.anime-details a:visited{
+    color: #1c439b;
+}
+.anime-details a:hover{
+    color: white !important;
+    background: #1c439b;
+}
+.section p{
+    font-size: 12px;
+}
+.section p a{
+    text-decoration: none;
+    color: #1c439b;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section p a:hover{
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.anime-score-upper{
+    border: 0.1px solid rgba(192, 192, 192, 0.5);
+    max-width: 600px;
+    background-color: #f8f8f8;
+}
+.anime-score-upper-left{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    padding: 10px 0 24px 5px;
+    float: left;
+}
+.score-box{
+    border-radius: 1px;
+    background-color: #2e51a2;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
+.score-anime{
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    width: 60px;
+    margin: 0;
+    font-weight: bold;
+    padding: 0;
+}
+.user-watch{
+    font-size: 9px;
+    width: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.ranked-score{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 3px 0px 2px 10px;
+    margin-left: 90px;
+    float: top;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.ranked-score .rank{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: baseline;
+}
+.ranked-score .popularity{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: baseline;
+}
+.ranked-score .member{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: baseline;
+}
+.ranked-score p{
+    font-weight: bold;
+}
+.anime-type{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left:80px;
+    padding: 0px 0px 10px 10px;
+}
+.anime-type a{
+    text-decoration: none;
+    color: #1c439b;
+    font-size: 10px;
+    padding: 0 12px 0px 12px;
+}
+.anime-type .tv-type{
+    border-left: 0.1px solid silver;
+    border-right: 0.1px solid silver;
+}
+.anime-type a:hover{
+    text-decoration: underline;
+}
+.anime-type a:visited{
+    color: #1c439b;
+}
+.vertical-line{
+    border: 0.01px solid silver;
+    height: 50px;
+    margin-left: 87px ;
+    align-self: flex-start;
+    position: absolute;
+    top: 240px;
+}
+.anime-score-down{
+    border: 0.1px solid rgba(192, 192, 192, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 7px;
+    position: absolute;
+    height: 40px;
+    width: 585px;
+    padding: 0px 10px 0px 5px;
+}
+.episode-watch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline ;
+    margin: 0;
+    padding: 0px 2px 0px 2px;
+    gap: 5px;
+    align-items: center;
+    font-size: 10px;
+    width: 120px;
+    border: 0.1px solid silver;
+    height: 22px;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.episode-watch i{
+    background-color: blue;
+    color: white;
+    border: 1px solid #1c439b;
+    border-radius: 5px;
+    font-size: 8px;
+    align-self: center;
+    cursor: pointer;
+}
+.watch-status-score{
+    position: relative;
+    z-index: 2;
+    color: #1c439b;
+    border: 0.1px solid rgba(192, 192, 192, 0.5);
+    border-radius: 3px;
+    height: 25px;
+    width: 128px;
+}
+.watch-status-option{
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    height: 25px;
+    border-radius: 4px;
+}
+.watch-status-option:focus {
+    border: 1px solid green;
+    color: green;
+}
+.anime-score-detail{
+    height: auto;
+    width: auto;
+}
+.anime-score-detail video{
+    height: 133px;
+    width: 200px;
+    position: absolute;
+    top: 217px;
+    right: 427px;
+}
+.anime-score-detail .public{
+    color: #B25959;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 55px;
+    font-weight: 400;
+}
+.anime-score-detail .more-video a{
+    text-decoration: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.anime-score-detail .more-video a:hover{
+    text-decoration: underline;
+}
+.anime-score-detail .more-video a:visited{
+    color: #2e51a2;
+}
+.synopsis .synopsis-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+}
+.synopsis h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.synopsis a{
+    margin-top: 10px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.synopsis a:hover{
+    text-decoration: underline;
+}
+.synopsis a:visited{
+    color: #2e51a2;
+}
+.synopsis-paragraph p{
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 4px;
+    opacity: 0.8;
+    margin-top: 8px;
+    line-height: 15px;
+}
+.background .background-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+}
+.background h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.background a{
+    margin-top: 6px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.background a:hover{
+    text-decoration: underline;
+}
+.background a:visited{
+    color: #2e51a2;
+}
+.background p{
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 2px;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+.picture-fun{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px 0 0 0;
+    border-top: 0.1px solid rgba(192, 192, 192 , 0.5);
+    margin-top: 20px;
+}
+.picture-fun img{
+    height: 250px;
+    width: auto;
+}
+.related-entries{
+    margin-top: 90px;
+}
+.related-entries .entries-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+}
+.related-entries h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.related-entries a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.related-entries a:hover{
+    text-decoration: underline;
+}
+.related-entries a:visited{
+    color: #2e51a2;
+}
+.entries-section img{
+    padding: 7px 5px 3px 2px;
+}
+.entries-section{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-bottom: 0.1px solid silver;
+}
+.entries-text{
+    display: flex;
+    flex-direction: column;
+    border-right: 0.1px solid rgba(192, 192, 192 , 0.5);
+    width: 35vh;
+}
+.entries-text p{
+    padding: 7px 0px 0px 0px;
+    margin: 0;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.entries-text a{
+    padding: 3px 0px 0px 0px;
+    margin: 0;
+}
+.collab .collab-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+    margin-top: 30px;
+}
+.collab-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.collab-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.collab-header a:hover{
+    text-decoration: underline;
+}
+.collab-header a:visited{
+    color: #2e51a2;
+}
+.picture-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.picture-wrapper img{
+    height: 146px;
+    width: 236px;
+}
+.picture-wrapper .description{
+    height: 146px;
+    width: 236px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.picture-wrapper a{
+    text-decoration: none;
+    color: #2e51a2;
+}
+.picture-wrapper a:hover{
+    text-decoration: underline;
+}
+.picture-wrapper a:visited{
+    color: #2e51a2;
+}
+.anime-character .anime-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+    margin-top: 30px;
+}
+.anime-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.anime-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.anime-header a:hover{
+    text-decoration: underline;
+}
+.anime-header a:visited{
+    color: #2e51a2;
+}
+.box-leftside1{
+    width: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 18px 3px 1px ;
+    border-bottom: 0.1px solid rgba(192, 192, 192 , 0.5);
+    border-right: 0.1px solid rgba(192, 192, 192 , 0.5) ;
+}
+.box-leftside1 .box-leftside1-first{
+    display: flex;
+}
+.box-leftside1 img{
+    border: 0.1px solid silver;
+    height: 64px;
+    width: 44px;
+}
+.box-leftside1 .box-leftside1-second{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.character1 a{
+    text-decoration: none;
+    color: #2e51a2;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 3px 0 3px;
+    margin: 0;
+}
+.character1 p{
+    font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 3px 0 3px;
+    margin-top: 3px;
+}
+.anime-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.staff .staff-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+    margin-top: 30px;
+}
+.staff-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.staff-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.staff-header a:hover{
+    text-decoration: underline;
+}
+.staff-header a:visited{
+    color: #2e51a2;
+}
+.song-theme{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.song-theme .opening-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 0.1px solid silver;
+    width: 40vh;
+    margin-top: 30px;
+}
+.opening-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.opening-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.opening-header a:hover{
+    text-decoration: underline;
+}
+.opening-header a:visited{
+    color: #2e51a2;
+}
+
+.song-theme .ending-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+    width: 42vh;
+    margin-top: 30px;
+}
+.ending-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ending-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.ending-header a:hover{
+    text-decoration: underline;
+}
+.ending-header a:visited{
+    color: #2e51a2;
+}
+.song-theme p{
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px;
+}
+.song-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically */
+    gap: 22px; /* Adjust gap as needed */
+    padding: 5px; /* Optional: Add padding for better spacing */
+}
+.song-1 i{
+    color: grey;
+}
+.mv{
+    background-color: #1c439b;
+    color: white;
+    height: 18px;
+    width: 29px;
+    text-align: center;
+    border-radius: 6px;
+    opacity: 0.4;
+}
+.song-1 p, .song-1 a {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    font-size: 11px; /* Ensure consistent font size */
+    line-height: 1.5; /* Ensure consistent line height */
+}
+.episode-video .episode-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid silver;
+    margin-top: 30px;
+}
+.episode-header h2{
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.episode-header a{
+    margin-top: 9px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.episode-header a:hover{
+    text-decoration: underline;
+}
+.episode-header a:visited{
+    color: #2e51a2;
+}
+.episode-video img{
+    height: 129px;
+    width: 194px;
+}
+.picture-wrapper2{
+    display: flex;
+    padding: 3px 0px 15px 0px;
+    border-bottom: 0.1px solid rgba(192, 192, 192 , 0.5);
+    gap: 15px;
+    margin-bottom: 400px;
+}
+.gallery1 a{
+    text-decoration: none;
+    color: #2e51a2;
+}
+.gallery1 a:hover{
+    text-decoration: underline;
+}
+.gallery1 a:visited{
+    color: #2e51a2;
+}

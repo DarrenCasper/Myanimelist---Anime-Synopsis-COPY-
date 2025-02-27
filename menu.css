@@ -1,0 +1,258 @@
+.dropdown1{
+    display: inline-block;
+    position: relative;
+}
+.dropdown1 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown1 .content1{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown1:hover .content1{
+    display: block;
+}
+.dropdown1:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 55px;
+    height: 35px;
+}
+.dropdown1 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content1 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 140px;
+    height: 15px;
+}
+
+.dropdown2{
+    display: inline-block;
+    position: relative;
+}
+.dropdown2 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown2 .content2{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown2:hover .content2{
+    display: block;
+}
+.dropdown2:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 55px;
+    height: 35px;
+}
+.dropdown2 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content2 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}
+
+.dropdown3{
+    display: inline-block;
+    position: relative;
+}
+.dropdown3 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown3 .content3{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown3:hover .content3{
+    display: block;
+}
+.dropdown3:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 85px;
+    height: 35px;
+}
+.dropdown3 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content3 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}
+
+.dropdown4{
+    display: inline-block;
+    position: relative;
+}
+.dropdown4 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown4 .content4{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown4:hover .content4{
+    display: block;
+}
+.dropdown4:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 60px;
+    height: 35px;
+}
+.dropdown4 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content4 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}
+
+.dropdown5{
+    display: inline-block;
+    position: relative;
+}
+.dropdown5 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown5 .content5{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown5:hover .content5{
+    display: block;
+}
+.dropdown5:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 55px;
+    height: 35px;
+}
+.dropdown5 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content5 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}
+
+.dropdown6{
+    display: inline-block;
+    position: relative;
+}
+.dropdown6 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown6 .content6{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown6:hover .content6{
+    display: block;
+}
+.dropdown6:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 55px;
+    height: 35px;
+}
+.dropdown6 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content6 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}
+
+.dropdown7{
+    display: inline-block;
+    position: relative;
+}
+.dropdown7 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+.dropdown7 .content7{
+    display: none;
+    position: absolute;
+    background-color: #e1e7f5;
+    color: black;
+    z-index: 1;
+}
+.dropdown7:hover .content7{
+    display: block;
+}
+.dropdown7:hover li{
+    background-color: #e1e7f5;
+    color: black;
+    width: 55px;
+    height: 35px;
+}
+.dropdown7 a:hover{
+    background-color: #2e51a2;
+    color: rgb(255, 255, 255);
+}
+.content7 a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    height: 15px;
+}

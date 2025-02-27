@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MyAnimeList</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="leftside.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="rightside.css">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="icon" href="images/MAL logo.png">
+        <script src="https://kit.fontawesome.com/9d16c8508e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <img src="images/Logo.png" alt="MyAnimeList logo" class="logo">
+                </div>
+                <div class="nav-center">
+                    <img src="images/Event.png" alt="MAL Japan Banner">
+                </div>
+                <div class="nav-right">
+                    <button class="hide-ads">Hide Ads</button>
+                    <ul class="navigation">
+                        <li class="icon"><i class="fa-solid fa-bars fa-1x"></i></li>
+                        <li class="icon"><i class="fa-solid fa-envelope fa-1x"></i></li>
+                        <li class="icon"><i class="fa-solid fa-bell fa-1x"></i></li>
+                        <div class="profile">
+                            <li>DarrenCasper ▾</li>
+                            <img src="images/asuna.webp" alt="Profile Picture" class="profile">
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav class="subnavbar">
+                <ul class="subnav">
+                    <div class="dropdown1">
+                        <li>Anime</li>
+                        <div class="content1">
+                            <a href="">Anime Search</a>
+                            <a href="">Top Anime</a>
+                            <a href="">Seasonal Anime</a>
+                            <a href="">Video</a>
+                            <a href="">Reviews</a>
+                            <a href="">Recommendation</a>
+                            <a href="">2024 Challenge</a>
+                            <a href="">Fantasy Anime League</a>
+                        </div>
+                    </div>
+                    <div class="dropdown2">
+                        <li>Manga</li>
+                        <div class="content2">
+                            <a href="">Manga Search</a>
+                            <a href="">Top Manga</a>
+                            <a href="">Adapted to Anime</a>
+                            <a href="">Manga Store</a>
+                            <a href="">Reviews</a>
+                            <a href="">Recommendation</a>
+                            <a href="">2024 Challenge</a>
+                        </div>
+                    </div>
+                    <div class="dropdown3">
+                        <li>Community</li>
+                        <div class="content3">
+                            <a href="">Interest Stacks</a>
+                            <a href="">Forums</a>
+                            <a href="">Clubs</a>
+                            <a href="">Blogs</a>
+                            <a href="">Users</a>
+                        </div>
+                    </div>
+                    <div class="dropdown4">
+                        <li>Industry</li>
+                        <div class="content4">
+                            <a href="">News</a>
+                            <a href="">Featured Articles</a>
+                            <a href="">People</a>
+                            <a href="">Characters</a>
+                            <a href="">Companies</a>
+                            <a href="">MALxJapan</a>
+                        </div>
+                    </div>
+                    <div class="dropdown5">
+                        <li>Watch</li>
+                        <div class="content5">
+                            <a href="">Episode Videos</a>
+                            <a href="">Anime Trailers</a>
+                        </div>
+                    </div>
+                    <div class="dropdown6">
+                        <li>Read</li>
+                        <div class="content6">
+                            <a href="">Manga Store</a>
+                        </div>
+                    </div>
+                    <div class="dropdown7">
+                        <li>Help</li>
+                        <div class="content7">
+                            <a href="">About</a>
+                            <a href="">Support</a>
+                            <a href="">Advertising</a>
+                            <a href="">FAQ</a>
+                            <a href="">Report</a>
+                            <a href="">Staff</a>
+                            <a href="">MAL Supporter</a>
+                        </div>
+                    </div>
+                </ul>
+                <div class="search-dropbar">
+                    <select class="search-dropdown">
+                        <option>All</option>
+                        <option>Anime</option>
+                        <option>Manga</option>
+                        <option>Characters</option>
+                        <option>People</option>
+                        <option>Companies</option>  
+                        <option>Manga Store</option>
+                        <option>News</option>
+                        <option>Featured Article</option>
+                        <option>Forums</option>
+                        <option>Clubs</option>
+                        <option>Users</option>
+                    </select>
+                    <input type="text" class="search-box" placeholder="Search for Anime, Manga, and more...">
+                </div>
+            </nav>
+
+            <div class="header">
+                <h1 class="title">
+                    Giji Harem
+                 <p class="alternatetitle">Pseudo Harem</p>
+                </h1>
+                <a href=""><i class="fa-solid fa-pencil fa-1x"></i>Edit</a>
+            </div>
+
+            <div class="content">
+                <table class="full-content" border='0' cellpadding='0' cellspacing='0'>
+                    <tr>
+                        <td class="leftside" width="225" style="border-width: 0 1px 0 0;" valign="top">
+                            <img src="images/Giji.jpg" alt="Giji Harem" class="anime-image">
+                            <button class="watch">Watch episodes</button>
+                            <h2>Edit Status</h2>
+                            <div class="status">
+                                <h3 class="public">*your list is public by default.</h3>
+                                <table class="table">
+                                    <tr class="statusanime">
+                                        <th>Status:</th>
+                                        <td>
+                                            <select>
+                                                <option>Watching</option>
+                                                <option>Completed</option>
+                                                <option>On-Hold</option>
+                                                <option>Dropped</option>
+                                                <option>Plan to Watch</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="animeseen">
+                                        <th>Eps Seen:</th>
+                                        <td><input type="text" class="Score" style="max-width: 44px; max-height: 19px;"> /12</td>
+                                    </tr>
+                                    <tr class="animescore">
+                                        <th>Your Score:</th>
+                                        <td>
+                                            <select>
+                                                <option>Select</option>
+                                                <option>10 (Masterpiece)</option>
+                                                <option>9 (Great)</option>
+                                                <option>8 (Very Good)</option>
+                                                <option>7 (Good)</option>
+                                                <option>6 (Fine)</option>
+                                                <option>5 (Average)</option>
+                                                <option>4 (Bad)</option>
+                                                <option>3 (Very Bad)</option>
+                                                <option>2 (Horrible)</option>
+                                                <option>1 (Appalling)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="status-update">
+                                <button class="update-button">Update</button>
+                                <h4>Edit Details</h4>
+                            </div>
+                            <button class="addtofavorites">Add to Favorites</button>
+
+                            <div class="socialmedia">
+                                <div class="box"><i class="fa-brands fa-facebook-f fa-1x"></i></div>
+                                <div class="box"><i class="fa-brands fa-twitter"></i></div>
+                                <div class="box"><i class="fa-brands fa-reddit-alien"></i></div>
+                                <div class="box"><i class="fa-brands fa-tumblr"></i></div>
+                            </div>
+
+
+                            <div class="alternativetitle">
+                                <h2>Alternative Titles</h2>
+                                <input type="checkbox" id="toggle" style="display: none;">
+                                <table class="titletable">
+                                    <tr class="japan">
+                                        <th>Japanese:</th>
+                                        <td>疑似ハーレム</td>
+                                    </tr>
+                                    <tr class="english">
+                                        <th>English: </th>
+                                        <td>Pseudo Harem</td>
+                                    </tr>
+                                </table>
+                                <label for="toggle" class="more"><i class="fa-solid fa-angle-down"></i> More titles</label>
+                                <label for="toggle" class="less"><i class="fa-solid fa-angle-up"></i> Less titles</label>
+                            </div>
+
+                            <div class="Information">
+                                <h2>Information</h2>
+                                <table class="informationtable">
+                                    <tr class="mediatype" id="same">
+                                        <th>Type:</th>
+                                        <td><a href="">TV</a></td>
+                                    </tr>
+                                    <tr class="episodes" id="same">
+                                        <th>Episodes:</th>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr class="status" id="same">
+                                        <th>Status:</th>
+                                        <td>Finished Airing</td>
+                                    </tr>
+                                    <tr class="aired" id="same">
+                                        <th>Aired:</th>
+                                        <td>Jul 5, 2024 to Sep 20, 2024</td>
+                                    </tr>
+                                    <tr class="premiered" id="same">
+                                        <th>Premiered:</th>
+                                        <td><a href="">Summer 2024</a></td>
+                                    </tr>
+                                    <tr class="broadcast" id="same">
+                                        <th>Broadcast:</th>
+                                        <td>Fridays at 00:30 (JST)</td>
+                                    </tr>
+                                    <tr class="producers" id="same">
+                                        <th>Producers:</th>
+                                        <td><a href="">Pony Canyon</a>, <a href="">BS Fuji</a>, <a href="">Tokyo MX</a>, <a href="">bilibili</a></td>
+                                    </tr>
+                                    <tr class="licensors" id="same">
+                                        <th>Licensors:</th>
+                                        <td>None found, <a href="">add some</a></td>
+                                    </tr>
+                                    <tr class="studios" id="same">
+                                        <th>Studios:</th>
+                                        <td><a href="">Nomad</a></td>
+                                    </tr>
+                                    <tr class="source" id="same">
+                                        <th>Source:</th>
+                                        <td><a href="">Web manga</a></td>
+                                    </tr>
+                                    <tr class="genres" id="same">
+                                        <th>Genres:</th>
+                                        <td><a href="">Comedy</a>, <a href="">Romance</a></td>
+                                    </tr>
+                                    <tr class="themes" id="same">
+                                        <th>Themes:</th>
+                                        <td><a href="">Love Status Quo</a>, <a href="">School</a></td>
+                                    </tr>
+                                    <tr class="demographic" id="same">
+                                        <th>Demographic:</th>
+                                        <td><a href="">Shounen</a></td>
+                                    </tr>
+                                    <tr class="duration" id="same">
+                                        <th>Duration:</th>
+                                        <td>23 min. per ep.</td>
+                                    </tr>
+                                    <tr class="rating" id="same">
+                                        <th>Rating:</th>
+                                        <td>PG-13 - Teens 13 or older</td>
+                                    </tr>
+                                </table> 
+                            </div>
+                            <div class="statistics">
+                                <h2>Statistics</h2>
+                                <table class="data">
+                                    <tr id="same2">
+                                        <th>Score:</th>
+                                        <Td>7.85 (Scored by 66,086 users)</Td>
+                                    </tr>
+                                    <tr id="same2">
+                                        <th>Ranked:</th>
+                                        <Td>#929</Td>
+                                    </tr>
+                                    <tr id="same2">
+                                        <th>Popularity:</th>
+                                        <Td>#1477</Td>
+                                    </tr>
+                                    <tr id="same2">
+                                        <th>Members:</th>
+                                        <Td>169,974</Td>
+                                    </tr>
+                                    <tr id="same2">
+                                        <th>Favorites:</th>
+                                        <Td>1,295</Td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="links">
+                                <h2>Available At</h2>
+                                <table class="external">
+                                    <tr id="same3">
+                                        <th class="linker"><a href="https://gijiharem.com"><i class="fa-solid fa-link"></i></a></th>
+                                        <td><a href="https://gijiharem.com">Official Site</a></td>
+                                    </tr>
+                                    <tr id="same3">
+                                        <th class="twitter"><a href="https://twitter.com/GijiHarem"><i class="fa-brands fa-square-twitter"></i></a></th>
+                                        <td><a href="https://twitter.com/GijiHarem">@GijiHarem</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="resource">
+                                <h2>Resources</h2>
+                                <input type="checkbox" id="toggle1" style="display: none;">
+                                <table class="resourcetable">
+                                    <tr class="same4" id="resource1">
+                                        <th><a href="https://anidb.net/perl-bin/animedb.pl?show=anime&aid=17982"><img src="images/AniDB.png"></a></th>
+                                        <td><a href="https://anidb.net/perl-bin/animedb.pl?show=anime&aid=17982">AniDB</a></td>
+                                    </tr>
+                                    <tr class="same4" id="resource2">
+                                        <th><a href="https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27876"><img src="images/ANN.png"></a></th>
+                                        <td><a href="https://www.animenewsnetwork.com/encyclopedia/anime.php?id=27876">ANN</a></td>
+                                    </tr>
+                                    <tr class="same4" id="resource3">
+                                        <th><a href="https://en.wikipedia.org/wiki/Pseudo_Harem#Anime"><img src="images/Wiki.png"></a></th>
+                                        <td><a href="https://en.wikipedia.org/wiki/Pseudo_Harem#Anime">wikipedia</a></td>
+                                    </tr>
+                                    <tr class="same4" id="resource4">
+                                        <th><a href="https://cal.syoboi.jp/tid/7120"><img src="images/Syoboi.png"></a></th>
+                                        <td><a href="https://cal.syoboi.jp/tid/7120">Syoboi</a></td>
+                                    </tr>
+                                </table>
+                                <label for="toggle1" class="more1"><i class="fa-solid fa-angle-down"></i> More Links</label>
+                                <label for="toggle1" class="less1"><i class="fa-solid fa-angle-up"></i> Less Links</label>
+                            </div>
+
+                            <div class="streaming">
+                                <h2>Streaming Platforms</h2>
+                                <input type="checkbox" id="toggle2" style="display: none;">
+                                <table class="streamingtable">
+                                    <tr class="same5" id="streaming1">
+                                        <th><a href="https://www.crunchyroll.com/series/GKEH2G08K/pseudo-harem"><img src="images/crunchy.webp"></a></th>
+                                        <td><a href="https://www.crunchyroll.com/series/GKEH2G08K/pseudo-harem">Crunchyroll</a></td>
+                                    </tr>
+                                    <tr class="same5" id="streaming2">
+                                        <th><a href="https://www.youtube.com/channel/UC0wNSTMWIL3qaorLx0jie6A"><img src="images/anione.jpg"></a></th>
+                                        <td><a href="https://www.youtube.com/channel/UC0wNSTMWIL3qaorLx0jie6A">Ani-One Asia</a></td>
+                                    </tr>
+                                    <tr class="same5" id="streaming3">
+                                        <th><a href="https://www.bilibili.tv/en/category?season_type=1,4"><img src="images/bili.png"></a></th>
+                                        <td><a href="https://www.bilibili.tv/en/category?season_type=1,4">Bilibili Global</a></td>
+                                    </tr>
+                                </table>
+                                <label for="toggle2" class="more2"><i class="fa-solid fa-angle-down"></i> More Services</label>
+                                <label for="toggle2" class="less2"><i class="fa-solid fa-angle-up"></i> Less Services</label>
+                            </div>
+                        </td>
+                        <td class="rightside"style="padding-left: 5px;" valign="top">
+                            <div class="anime-details">
+                                <a href="" class="active">Details</a>
+                                <a href="">Characters & Staff</a>
+                                <a href="">Episodes</a>
+                                <a href="">Videos</a>
+                                <a href="">Stats</a>
+                                <a href="">Reviews</a>
+                                <a href="">Recommendation</a>
+                                <a href="">Interest Stacks</a>
+                                <a href="">News</a>
+                                <a href="">Forum</a>
+                                <a href="">Clubs</a>
+                                <a href="">Pictures</a>
+                            </div>
+                            
+                            <div class="section">
+                                <p><a href="">Top</a>  >  <a href="">Anime</a>  >  <a href="">Giji Harem</a></p>
+                            </div>
+
+                            <div class="anime-score-detail">
+                                <div class="anime-score-upper">
+                                    <div class="anime-score-upper-left">
+                                        <div class="score-box">
+                                            SCORE
+                                        </div>
+                                        <p class="score-anime">7.85</p>
+                                        <p class="user-watch">66,333 users</p>
+                                    </div>
+                                    <div class="anime-score-upper-right">
+                                        <div class="ranked-score">
+                                            <div class="rank">Ranked<p>#937</p></div>
+                                            <div class="popularity">Popularity<p>#1475</p></div>
+                                            <div class="member">Members<p>170,367</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="anime-type">
+                                        <a href="" class="summer">Summer 2024</a>
+                                        <a href="" class="tv-type">TV</a>
+                                        <a href="" class="Studio-maker">Nomad</a>
+                                    </div>
+                                    <div class="vertical-line">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="anime-score-down">
+                                    <div class="watch-status">
+                                        <select class="watch-status-option">
+                                            <option class="watching">Watching</option>
+                                            <option class="completed">Completed</option>
+                                            <option class="on-hold">On-Hold</option>
+                                            <option class="dropped">Dropped</option>
+                                            <option class="planned">Planned to Watch</option>
+                                        </select>
+                                    </div>
+                                    <div class="watch-score">
+                                        <select class="watch-status-score">
+                                            <option>Select</option>
+                                            <option>10 (Masterpiece)</option>
+                                            <option>9 (Great)</option>
+                                            <option>8 (Very Good)</option>
+                                            <option>7 (Good)</option>
+                                            <option>6 (Fine)</option>
+                                            <option>5 (Average)</option>
+                                            <option>4 (Bad)</option>
+                                            <option>3 (Very Bad)</option>
+                                            <option>2 (Horrible)</option>
+                                            <option>1 (Appalling)</option>
+                                        </select>
+                                    </div>
+                                    <div class="episode-watch">
+                                        <div class="episodes-watch-left">
+                                            <p>Episodes:</p>
+                                        </div>
+                                        <div class="episodes-watch-right">
+                                            <p>12/12 <i class="fa-solid fa-plus"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <video src="video/TVアニメ『疑似ハーレム』第2弾PV.mp4" controls>
+                                    <source src="video/TVアニメ『疑似ハーレム』第2弾PV.mp4">
+                                </video>
+                                <h3 class="more-video"><a href="">More Videos</a></h3>
+                                <h3 class="public">*your list is public by default.</h3>
+                            </div>
+
+                            <div class="synopsis">
+                                <div class="synopsis-header">
+                                    <h2>Synopsis</h2>
+                                    <a href="">Edit</a>
+                                </div>
+                                <div class="synopsis-paragraph">
+                                    <p class="synopsis-paragraph1">
+                                        Eiji Kitahama has a dream shared by many high school guys: to be popular and have a harem of girls fawning over him. Luckily for him, his
+                                        new junior in the drama club, Rin Nanakura, has decided to help him realize this wish. Using her impressive acting abilities, she takes on many
+                                        personalities, from teasing to calm and collected, to play characters in Eiji's simulated harem.
+                                    </p> 
+                                    <p class="synopsis-paragraph2">
+                                        As her connection with Eiji Deepens, Rin expands her repertoire, quickly swapping between characters while enjoying high school life together
+                                        in the club. Through her acting, the real Rin Nanakura tries her best to win Eiji's heart.
+                                    </p>
+                                    <p>
+                                        [Written by MAL Rewrite]
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="background">
+                                <div class="background-header">
+                                    <h2>Background</h2>
+                                    <a href="">Edit</a>
+                                </div>
+                                <p><i>Giji Harem</i> was released on Blu-ray in a box set on November 22,2024.</p>
+                            </div>
+
+                            <div class="picture-fun">
+                                <img src="images/miyabi.webp">
+                                <img src="gif/yunli-honkai-star-rail.gif">
+                            </div>
+
+                            <div class="related-entries">
+                                <div class="entries-header">
+                                    <h2>Related Entries</h2>
+                                    <a href="">Edit</a>
+                                </div>
+                                <div class="entries-section">
+                                    <div class="manga-adaptation">
+                                        <img src="images/mangaanime.jpg">
+                                    </div>
+                                    <div class="entries-text">
+                                        <p>Adaptation (Manga)</p>
+                                        <a href="">Giji Harem</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="collab">
+                                <div class="collab-header">
+                                    <h2>MALXJAPAN -More than just anime-</h2>
+                                    <a href="">Visit MALxJapan</a>
+                                </div>
+                                <div class="picture-wrapper">
+                                    <div class="gallery">
+                                        <a target="_blank" href="">
+                                        <img src="images/collab1.png" alt="">
+                                        <div class="description">Read some great manga in 2024? Nominate Them!</div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery">
+                                        <a target="_blank" href="">
+                                        <img src="images/collab2.png" alt="">
+                                        <div class="description">The results are in! Take a look through MAL's official 2024 anime yearbook</div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery">
+                                        <a target="_blank" href="">
+                                        <img src="images/collab3.png" alt="">
+                                        <div class="description">Watch "ConBiz!" - a new Japanese business entertaintment program</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="anime-character">
+                                <div class="anime-header">
+                                    <h2>Characters & Voice Actors</h2>
+                                    <a href="">More characters</a>
+                                </div>
+                                <div class="anime-wrapper">
+                                    <div class="anime-leftside">
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/rin.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Nanakura, Rin</a>
+                                                    <p>Main</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/saori.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Hayami, Saori</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/eiji.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Kitahama, Eiji</a>
+                                                    <p>Main</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/nobu.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Okamoto, Nobuhiko</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/ayaka.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Nanakura, Ayaka</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/mai.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Narumi, Mai</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/shiro.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Shiro</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/nao.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Ojika, Nao</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/moe.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Moe</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/mei.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Ishizawa, Mei</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="anime-rightside">
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/eiji mom.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Kitahama's Mother</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/erisa.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Ichihara, Erisa</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/megu.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Megu</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/mei.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Abo, Maria</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/motokuni.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Nakayama, Motokuni</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/junichi.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Suwabe, Junichi</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/tsuguto.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Iwata, Tsuguto</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/kouji.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Yusa, Kouji</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/kiri.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Shirasawa, Kiri</a>
+                                                    <p>Supporting</p>
+                                                </div>
+                                            </div>
+                                            <div class="box-leftside1-second">
+                                                <div class="picture2">
+                                                    <img src="images/minako.jpg">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Satou, Minako</a>
+                                                    <p>Japanese</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="staff">
+                                <div class="staff-header">
+                                    <h2>Staff</h2>
+                                    <a href="">More staff</a>
+                                </div>
+                                <div class="anime-wrapper">
+                                    <div class="anime-leftside">
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/unknown.gif">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Oomori, Shinji</a>
+                                                    <p>Producer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/unknown.gif">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Matsuoka, Takanori</a>
+                                                    <p>Producer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="anime-rightside">
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/unknown.gif">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Konishi, Yuuki</a>
+                                                    <p>Producer</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box-leftside1">
+                                            <div class="box-leftside1-first">
+                                                <div class="picture1">
+                                                    <img src="images/unknown.gif">
+                                                </div>
+                                                <div class="character1">
+                                                    <a href="">Kikuchi, Toshihiro</a>
+                                                    <p>Director, Episode Director, Storyboard</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="song-theme">
+                                <div class="opening-theme">
+                                    <div class="opening-header">
+                                        <h2>Opening Theme</h2>
+                                        <a href="">Edit</a>
+                                    </div>
+                                    <div class="song-theme-1">
+                                        <div class="song-1">
+                                            <i class="fa-regular fa-circle-play fa-1x"></i>
+                                            <p>"Blouse (ブラウス)" by Gohobi (ゴホウビ) (eps 1-11)</p> 
+                                            <div class="mv">
+                                                <p>MV</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ending-theme">
+                                    <div class="ending-header">
+                                        <h2>Ending Theme</h2>
+                                        <a href="">Edit</a>
+                                    </div>
+                                    <div class="song-theme-1">
+                                        <div class="song-1">
+                                            <i class="fa-regular fa-circle-play fa-1x"></i>
+                                            <p>1: "Ad-lib (アドリブ)" by Rin Nanakura (CV: Saori Hayami)</p> 
+                                            <div class="mv">
+                                                <p>MV</p>
+                                            </div>
+                                        </div>
+                                        <div class="song-1">
+                                            <i class="fa-regular fa-circle-play fa-1x"></i>
+                                            <p>2: "Blouse (ブラウス)" by Gohobi (ゴホウビ) (eps 12)</p> 
+                                            <div class="mv">
+                                                <p>MV</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="episode-video">
+                                <div class="episode-header">
+                                    <h2>Episode Videos</h2>
+                                    <a href="">More Videos</a>
+                                </div>
+                                <div class="picture-wrapper2">
+                                    <div class="gallery1">
+                                        <a target="_blank" href="">
+                                        <img src="images/episode4.png" alt="">
+                                        <div class="description">Episode 4</div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery1">
+                                        <a target="_blank" href="">
+                                        <img src="images/episode3.png" alt="">
+                                        <div class="description">Episode 3</div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery1">
+                                        <a target="_blank" href="">
+                                        <img src="images/episode2.png" alt="">
+                                        <div class="description">Episode 2</div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery1">
+                                        <a target="_blank" href="">
+                                        <img src="images/episode1.png" alt="">
+                                        <div class="description">Episode 1</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <div id="icon-footer" style="margin-top: 0px;">
+                <div class="icon1">
+                    <h3 class="box3">Follow Us</h3>
+                    <div class="box1"><a href="https://www.facebook.com/OfficialMyAnimeList"><i class="fa-brands fa-square-facebook fa-2x"></i></a></div>
+                    <div class="box1"><a href="https://x.com/myanimelist"><i class="fa-brands fa-square-twitter fa-2x"></i></a></div>
+                    <div class="box1"><a href="https://www.instagram.com/myanimelistofficial/"><i class="fa-brands fa-square-instagram fa-2x"></i></a></div>
+                    <div class="box1"><a href="https://discord.com/invite/myanimelist"><i class="fa-brands fa-discord fa-2x"></i></a></div>
+                </div>
+                <div class="icon2">
+                    <h3 class="box4">Get the App</h3>
+                    <div class="box2"><a href="https://apps.apple.com/us/app/myanimelist-official/id1469330778?md=8&ct=pc_footer_login"><img src="images/IOS.png"></a></div>
+                    <div class="box2"><a href="https://play.google.com/store/apps/details?utm_campaign=pc_footer_login&id=net.myanimelist.app&utm_source=mal&pli=1"><img src="images/play.png"></a></div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="navigationbar-bottom">
+                <p class="home"><a href="https://myanimelist.net/">Home</a></p>
+                <p class="others">
+                    <a href="https://myanimelist.net/about.php">About</a>
+                    <a href="https://myanimelist.net/pressroom">Press room</a>
+                    <a href="https://myanimelist.net/about.php?go=contact">Support</a>
+                    <a href="https://myanimelist.net/advertising">Advertising</a>
+                    <a href="https://myanimelist.net/forum/?topicid=515949">FAQ</a>
+                    <a href="https://myanimelist.net/about/terms_of_use">Terms</a>
+                    <a href="https://myanimelist.net/about/privacy_policy">Privacy</a>
+                    <a href="https://myanimelist.net/about/cookie_policy">Cookie</a>
+                    <a href="https://myanimelist.net/about/notice_at_collection">Notice at Collection</a>
+                    <a href="https://myanimelist.net/about/sitemap">Sitemap</a>
+                </p>
+            </div>
+            <div class="external-links">
+                <div class="recomend">Recommended</div>
+                <div class="external-links-outside">
+                    <a href="https://otakumode.com/">
+                        <img src="images/otaku.png">
+                        <h3 class="text1">Tokyo Otaku Mode</h3>
+                    </a>    
+                    <a href="https://www.honeyfeed.fm/">
+                        <img src="images/honey.jpg">
+                        <h3 class="text1">Honeyfeed</h3>
+                    </a>    
+                    <a href="https://myanimelist.net/store">
+                        <img src="images/manga.png">
+                        <h3 class="text1">Manga Store</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="ending">
+                <p class="ending1">MyAnimeList.net is a property of MyAnimeList Co., Ltd. ©2025 All Rights Reserved.</p>
+                <p class="ending2">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </div>
+        </footer>
+    </body>
+</html>

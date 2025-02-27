@@ -1,0 +1,372 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: black;
+    border: 0.1px solid silver;
+}
+.content .leftside{
+    border: 0.1px solid silver;
+}
+.content .leftside img{
+    height: 318px;
+    cursor: pointer;
+    padding: 1px;
+}
+.content .watch{
+    background-color:#4f74c8 ;
+    border: none;
+    cursor: pointer;
+    width: 225px;
+    padding: 6px 0px ;
+    border-radius: 3px;
+    color: white;
+}
+.content .watch::before{
+    content: "🌐";
+}
+.status {
+    border-top: 0.1px solid silver;
+}
+.leftside h2{
+    margin: 8px 0px 5px;
+    padding: 3px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.status .public{
+    color: #B25959;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 4px 0px 16px;
+}
+.status .table th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10.5px;
+    color: #000000;
+    margin: 3px 0px;
+    padding: 3px 0px;
+    text-align: left;
+}
+.status .table .td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #000000;
+    margin: 3px 0px;
+    padding: 3px 0px;
+    text-align: right;
+}
+.status .table .animeseen td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #000000;
+    margin: 3px 0px;
+    padding: 3px 0px;
+}
+.status .table .animeseen td::after{
+    content: "+";
+    color: blue;
+}
+.status-update {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 80px;
+    max-height: 20px;
+}
+.update-button {
+    background-color: #2e51a2;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.status-update h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 9px;
+    margin: 1px 5px;
+    color: #2e51a2;
+}
+.addtofavorites{
+    color: #2e51a2;
+    background-color: white;
+    border-top: 0.1px solid #2e51a2;
+    border-bottom: 0.1px solid #2e51a2;
+    border-left: none;
+    border-right: none;
+    padding: 2px 3px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 225px ;
+}
+.addtofavorites:hover{
+    background-color: #2e51a2;
+    color: white;
+}
+
+.socialmedia{
+    display: flex;
+    gap: 8px;
+    margin: 8px 1px 1px 0px ;
+}
+.socialmedia .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid silver ;
+    color: hsl(0, 0%, 40%);
+    height: 30px;
+    width: 48px;
+}
+.socialmedia .box:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.titletable{
+    border-top: 0.1px solid silver;
+    text-align: left;
+    width: 225px;
+}
+.english{
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#toggle:checked ~ .titletable .english {
+    display: table-row;
+    opacity: 1;
+}
+
+.more {
+    display: inline-block;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.more:hover{
+    text-decoration: underline;
+}
+
+.less {
+    display: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.less:hover{
+    text-decoration: underline;
+}
+
+#toggle:checked ~ .more {
+    display: none;
+}       
+
+#toggle:checked ~ .less {
+    display: inline-block;
+}
+.alternativetitle .titletable th{ 
+    color: #444444;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alternativetitle .titletable td{
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.informationtable{
+    border-top: 0.1px solid silver;
+}
+.informationtable #same{
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px;
+}
+.informationtable th{
+    color: #444444;
+}
+.informationtable a{
+    text-decoration: none;
+}
+.informationtable a:hover{
+    text-decoration: underline;
+}
+.informationtable a:visited{
+    color: #1c439b;
+}
+.data{
+    border-top: 0.1px solid silver;
+    margin-top: 10px;
+}
+.data th{
+    color: #444444;
+}
+.data #same2{
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px;
+}
+.external{
+    border-top: 0.1px solid silver;
+    width: 225px;
+}
+.external #same3{
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px;
+    margin: 0px 0px 0px 6px;
+}
+.external .twitter{
+    color: rgb(88, 213, 255);
+}
+.external a{
+    text-decoration: none;
+}
+.external a:hover{
+    text-decoration: underline;
+}
+.external a:visited{
+    color: #1c439b;
+}
+.external .linker{
+    color: #1c439b;
+}
+.resourcetable{
+    border-top: 0.1px solid silver;
+    width: 225px;
+}
+.resourcetable .same4{
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px;
+    margin: 0px 0px 0px 6px;
+}
+.resourcetable .same4 img{
+    width: 20px;
+    height: 20px;
+}
+#resource3{
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#resource4{
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#toggle1:checked ~ .resourcetable #resource3 {
+    display: table-row;
+    opacity: 1;
+}
+#toggle1:checked ~ .resourcetable #resource4 {
+    display: table-row;
+    opacity: 1;
+}
+.more1 {
+    display: inline-block;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.more1:hover{
+    text-decoration: underline;
+}
+
+.less1 {
+    display: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.less1:hover{
+    text-decoration: underline;
+}
+#toggle1:checked ~ .more1 {
+    display: none;
+}       
+
+#toggle1:checked ~ .less1 {
+    display: inline-block;
+}
+.resourcetable a{
+    text-decoration: none;
+}
+.resourcetable a:hover{
+    text-decoration: underline;
+}
+.resourcetable a:visited{
+    color: #1c439b;
+}
+.streamingtable{
+    border-top: 0.1px solid silver;
+    width: 225px;
+}
+.streamingtable .same5{
+    text-align: left;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 0px;
+    margin: 0px 0px 0px 6px;
+}
+.streamingtable .same5 img{
+    width: 20px;
+    height: 20px;
+}
+#streaming3{
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#toggle2:checked ~ .streamingtable #streaming3 {
+    display: table-row;
+    opacity: 1;
+}
+.more2 {
+    display: inline-block;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.more2:hover{
+    text-decoration: underline;
+}
+
+.less2 {
+    display: none;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c439b;
+}
+.less2:hover{
+    text-decoration: underline;
+}
+#toggle2:checked ~ .more2 {
+    display: none;
+}       
+
+#toggle2:checked ~ .less2 {
+    display: inline-block;
+}
+.streamingtable a{
+    text-decoration: none;
+}
+.streamingtable a:hover{
+    text-decoration: underline;
+}
+.streamingtable a:visited{
+    color: #1c439b;
+}
