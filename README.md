@@ -13,3 +13,4 @@ Extra Information:
 2. This is bad for phone or any other smaller, cuz i didnt position the layout correctly
 3. Well on normal monitor size is good enough
 4. this is my actual huge first project after learning HTML and CSS
+5. No Javascript at all, js pure HTML and CSS hell.
